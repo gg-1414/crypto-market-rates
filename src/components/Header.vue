@@ -114,14 +114,19 @@ export default {
 
     @media screen and (min-width: 1280px) {
       display: grid;
-      grid-template-columns: auto auto auto calc(#{$toggle-theme-btn-width} + 24px);
+      grid-template-columns: auto 1fr auto calc(#{$toggle-theme-btn-width} + 24px);
       grid-template-rows: 1fr;
       align-items: center;
+      position: relative;
       
       h1 {
         font-size: 32px;
         grid-area: 1 / 2;
         justify-self: center;
+        margin-right: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-75%);
       }
 
       .toggle-interval {
