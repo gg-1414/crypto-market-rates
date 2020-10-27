@@ -107,9 +107,6 @@ export default {
 
       .toggle-interval {
         justify-self: right;
-      }
-
-      .toggle-interval {
         grid-area: 2 / 2;
       }
     }
@@ -160,6 +157,7 @@ export default {
       letter-spacing: 1px;
       background: $light-blue-gray;
       border: 2px solid $darkest-blue-gray;
+      margin-left: 6px;
 
       &:hover,
       &.active {
