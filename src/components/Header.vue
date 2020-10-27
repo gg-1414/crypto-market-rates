@@ -66,7 +66,7 @@ export default {
 
   header {
     display: grid;
-    grid-template-columns: 1fr calc($toggle-theme-btn-width + 16px);
+    grid-template-columns: 1fr calc(#{$toggle-theme-btn-width} + 16px);
     grid-template-areas: 
       "logo themeToggle"
       "title title"
