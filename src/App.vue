@@ -72,21 +72,23 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  margin: 0; 
-}
+  @import './styles/theme.scss';
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  max-width: 90%;
-  margin: 40px auto;
-}
+  body {
+    margin: 0; 
+  }
 
-main {
-  margin-top: 16px;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $blue-gray;
+    max-width: 90%;
+    margin: 40px auto;
+  }
+
+  main {
+    margin-top: 16px;
+  }
 </style>

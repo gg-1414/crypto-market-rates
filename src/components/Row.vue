@@ -20,12 +20,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../styles/theme.scss';
+
   .row {
     display: flex;
     align-items: center;
     text-align: left;
     gap: 16px;
-    background-color: #eee;
+    background-color: $light-gray;
     padding: 16px;
   }
 

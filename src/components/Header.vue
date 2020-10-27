@@ -84,11 +84,11 @@ export default {
       border-radius: 50%;
       height: 32px;
       width: 32px;
-      color: white;
+      color: $white;
       font-weight: bold;
       letter-spacing: 1px;
-      background: #4d6074;
-      border: 2px solid black;
+      background: $light-blue-gray;
+      border: 2px solid $black;
       cursor: pointer;
 
       &:hover,

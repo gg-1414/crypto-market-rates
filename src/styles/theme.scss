@@ -1,6 +1,14 @@
+
+$white: #fff;
+$light-gray: #eee;
+$light-blue-gray: #4d6074;
 $blue-gray: #2c3e50;
 $darker-blue-gray: #2c3b4a; // dark-bg-1
 $darkest-blue-gray: #1c2935; // dark-bg-2
+$black: #000;
+
+$teal: #1ce2c3;
+$magenta: #d726ea;
 
 $light-theme: (
   "bg": #fff,
@@ -11,6 +19,3 @@ $dark-theme: (
   "bg": $darkest-blue-gray,
   "text": #fff
 );
-
-$teal: #1ce2c3;
-$magenta: #d726ea;
