@@ -158,6 +158,8 @@ export default {
       background: $light-blue-gray;
       border: 2px solid $darkest-blue-gray;
       margin-left: 6px;
+      display: flex;
+      justify-content: center;
 
       &:hover,
       &.active {
