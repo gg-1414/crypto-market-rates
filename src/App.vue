@@ -110,9 +110,17 @@ export default {
     color: $blue-gray;
     max-width: 90%;
     margin: 40px auto;
+    
+    @media screen and (min-width: 1280px) {
+      margin: 64px auto;
+    }
   }
 
   main {
     margin-top: 16px;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 32px;
+    }
   }
 </style>
