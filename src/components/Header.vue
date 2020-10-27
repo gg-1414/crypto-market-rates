@@ -160,6 +160,7 @@ export default {
       margin-left: 6px;
       display: flex;
       justify-content: center;
+      align-items: center;
 
       &:hover,
       &.active {
