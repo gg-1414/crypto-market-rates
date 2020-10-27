@@ -1,0 +1,16 @@
+$blue-gray: #2c3e50;
+$darker-blue-gray: #2c3b4a; // dark-bg-1
+$darkest-blue-gray: #1c2935; // dark-bg-2
+
+$light-theme: (
+  "bg": #fff,
+  "text": $blue-gray
+);
+
+$dark-theme: (
+  "bg": $darkest-blue-gray,
+  "text": #fff
+);
+
+$teal: #1ce2c3;
+$magenta: #d726ea;
