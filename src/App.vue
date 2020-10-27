@@ -1,5 +1,9 @@
 <template>
-  <Header @interval-change="updateInterval" />
+  <Header 
+    @interval-change="updateInterval" 
+    :darkTheme="darkTheme"
+    @theme-change="updateTheme"
+  />
   <main>
     <template v-if="loading">
       <p>Loading...</p>
@@ -27,7 +31,8 @@ export default {
       fetchUrl: 'https://liquality.io/swap/agent/api/swap/marketinfo',
       data: [],
       intervalDuration: 5000,
-      interval: null
+      interval: null,
+      darkTheme: false
     }
   },
   methods: {
@@ -59,6 +64,12 @@ export default {
 
       clearInterval(this.interval)
       this.initInterval(milliseconds)
+    },
+    updateTheme(isDarkTheme) {
+      this.darkTheme = isDarkTheme
+      this.darkTheme
+      ? document.body.classList.add(`theme-dark`)
+      : document.body.classList.remove('theme-dark')
     }
   },
   mounted() {
@@ -76,6 +87,19 @@ export default {
 
   body {
     margin: 0; 
+    background-color: $white;
+
+    h1, p, span {
+      color: $blue-gray;
+    }
+
+    &.theme-dark {
+      background-color: $darker-blue-gray;
+
+      h1, p, span {
+        color: $white;
+      }
+    }
   }
 
   #app {
