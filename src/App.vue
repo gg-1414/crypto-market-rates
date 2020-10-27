@@ -4,6 +4,7 @@
     :darkTheme="darkTheme"
     @theme-change="updateTheme"
   />
+  <SearchBar/>
   <main>
     <template v-if="loading">
       <p>Loading...</p>
@@ -16,6 +17,7 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import SearchBar from '@/components/SearchBar.vue'
 import Table from '@/components/Table.vue'
 import '@/styles/theme.scss'
 
@@ -23,6 +25,7 @@ export default {
   name: 'App',
   components: {
     Header,
+    SearchBar,
     Table
   },
   data() {
@@ -110,6 +113,9 @@ export default {
     color: $blue-gray;
     max-width: 90%;
     margin: 40px auto;
+    // display: flex;
+    // flex-direction: column;
+    // > * { flex: 1; }
   }
 
   main {

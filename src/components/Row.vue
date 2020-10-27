@@ -1,5 +1,9 @@
 <template>
-  <div class="row">
+  <div 
+    class="row" 
+    :data-from="content.from" 
+    :data-to="content.to"
+  >
     <p class="type"> 
       <b>{{ content.from }}</b> to <b>{{ content.to }}</b>
     </p>

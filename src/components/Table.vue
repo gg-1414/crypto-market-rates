@@ -30,6 +30,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+    // overflow: scroll;
 
     @media screen and (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);

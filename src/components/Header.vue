@@ -23,7 +23,7 @@ export default {
   name: 'Header',
   components: {
     MoonIcon,
-    SunIcon
+    SunIcon,
   },
   props: {
     darkTheme: {
@@ -75,6 +75,7 @@ export default {
     h1 {
       font-size: 28px;
       grid-area: title;
+      margin: 16px auto 12px;
     }
 
     img {
@@ -101,6 +102,7 @@ export default {
 
       h1 {
         grid-area: 2 / 1;
+        margin-left: 0;
       }
 
       .toggle-interval {
